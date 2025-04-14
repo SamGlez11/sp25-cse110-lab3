@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-[Website](./index.html)
+[Website](index.html)
