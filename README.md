@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-[Website](index.html)
+[Website](https://SamGlez11.github.io/CSE110-Lab1/)
