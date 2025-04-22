@@ -57,3 +57,58 @@ p {
   height: 5cm;
   width: 2in;
 }
+
+/* Box Model */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Margin */
+/* Longhand */
+header {
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* Shorthand */
+section {
+  margin: 40px 20px 40px 20px;
+}
+
+/* Auto margin */
+footer {
+  width: 60%;
+  margin: auto;
+}
+
+/* Padding */
+/* Long hand */
+header {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+/* Shorthand */
+section {
+  padding: 25px 15px 25px 15px; /* top right bottom left */
+}
+
+/* Borders */
+/* Long hand */
+header {
+  border-style: solid;
+  border-color: #b90000;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+/* Shorthand */
+section {
+  border: 2px dashed #0104a3; /* shorthand for width, style, and color */
+  border-radius: 8px;
+}
