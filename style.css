@@ -204,24 +204,72 @@ button:active {
 /* Grid */
 
 #grid-example {
-    margin: 2rem 0;
-    padding: 1rem;
-    border: 2px dashed #999;
-    background-color: #f9f9f9;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 2px dashed #999;
+  background-color: #f9f9f9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;                            
+  justify-items: center;                
+}
+
+.grid-item {
+  background-color: #b8e0d2;
+  border: 1px solid #333;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*responsiveness*/
+body {
+  font-family: 'Times New Roman'; /* Default font for large screens */
+  font-size: 1rem; /* Default font size */
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* 📱 Mobile styles — for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto for mobile */
+    font-size: 0.875rem; /* Smaller font size for mobile screens */
   }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;                            
-    justify-items: center;                
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
   }
-  
-  .grid-item {
-    background-color: #b8e0d2;
-    border: 1px solid #333;
-    padding: 1rem;
-    width: 80%;
-    text-align: center;
-    font-weight: bold;
+
+  h2 {
+    font-size: 1.25rem; /* Adjust heading size for mobile */
   }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph text size for mobile */
+  }
+}
+
+/* 💻 Medium screens — tablets/small laptops (600px to 900px) */
+@media (max-width: 900px) {
+  body {
+    font-family: 'Verdana', sans-serif; /* Change font for tablets/small laptops */
+    font-size: 1rem; /* Set default font size for medium screens */
+  }
+
+  h1 {
+    font-size: 1.75rem; /* Adjust heading size for medium screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size for medium screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph text size for medium screens */
+  }
+}
