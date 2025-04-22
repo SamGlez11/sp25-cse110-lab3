@@ -18,11 +18,13 @@ button {
 }
 
 body {
-    color: color(display-p3 1 0.5 0.5);
+  color: #ff8080; /* fallback for older browsers and validators */
+  color: color(display-p3 1 0.5 0.5); /* modern, wide-gamut */
 }
 
 a {
-    color: color-mix(in srgb, red 50%, blue 50%);
+  color: purple; /* fallback (approximate blend of red and blue) */
+  color: color-mix(in srgb, red 50%, blue 50%); /* modern mix */
 }
 
 /* CSS Variables & Fallbacks */
@@ -340,7 +342,7 @@ section:has(> img) {
   border: 2px dotted orange;
 }
 
-/* Nested Selectors (if supported, or simulate via BEM or Sass) */
+/* Nested Selectors  */
 article {
   background-color: #fefefe;
 }
@@ -363,4 +365,12 @@ button.primary {
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+  }
+
+  .nav {
+    background-color: lightgray;
+  
+    .nav-item {
+      color: blue;
+    }
   }
