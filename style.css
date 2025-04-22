@@ -1,4 +1,6 @@
 /* Here is the comment to meet the first requirement (yay) */
+
+/* color */
 h1 {
     color: rgba(0, 0, 255);
 }
@@ -23,10 +25,35 @@ a {
     color: color-mix(in srgb, red 50%, blue 50%);
 }
 
+/* CSS Variables & Fallbacks */
+
 :root {
     --main-bg: #f0f0f0;
 }
   
 section {
   background-color: var(--main-bg, white); /* fallback is white */
+}
+
+/* Background */
+
+header {
+    background-color: #ffb8b8;
+}
+
+/* Units */
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+  padding: 1em;
+  width: 90%;
+}
+
+.box {
+  height: 5cm;
+  width: 2in;
 }
