@@ -1,0 +1,32 @@
+/* Here is the comment to meet the first requirement (yay) */
+h1 {
+    color: rgba(0, 0, 255);
+}
+
+p {
+    color: #2e2c2c;
+}
+
+h2 {
+    color: hsla(243, 86%, 61%, 0.9);
+}
+
+button {
+    background-color: green;
+}
+
+body {
+    color: color(display-p3 1 0.5 0.5);
+}
+
+a {
+    color: color-mix(in srgb, red 50%, blue 50%);
+}
+
+:root {
+    --main-bg: #f0f0f0;
+}
+  
+section {
+  background-color: var(--main-bg, white); /* fallback is white */
+}
