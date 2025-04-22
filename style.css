@@ -166,34 +166,3 @@ footer {
   width: 100%;
   background-color: lightgray;
 }
-
-/* Pseudo Classes*/
-
-button:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-
-button:active {
-  transform: scale(0.98);
-  background-color: #388E3C;
-}
-
-/* Flexbox */
-
-form fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-/* Grid */
-
-section:nth-of-type(6) { /* Pictures section */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  align-items: center;
-}
