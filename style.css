@@ -18,13 +18,11 @@ button {
 }
 
 body {
-  color: #ff8080; /* fallback for older browsers and validators */
-  color: color(display-p3 1 0.5 0.5); /* modern, wide-gamut */
+  background-color: color(display-p3 1 0.5 0.5); /* modern, wide-gamut */
 }
 
 a {
-  color: purple; /* fallback (approximate blend of red and blue) */
-  color: color-mix(in srgb, red 50%, blue 50%); /* modern mix */
+  background-color: color-mix(in srgb, red 50%, blue 50%); /* modern mix */
 }
 
 /* CSS Variables & Fallbacks */
@@ -241,6 +239,7 @@ button:active {
   body {
     font-family: 'Roboto', sans-serif; /* Change font to Roboto for mobile */
     font-size: 0.875rem; /* Smaller font size for mobile screens */
+    background-color:#31c5ff;
   }
 
   h1 {
@@ -253,43 +252,6 @@ button:active {
 
   p {
     font-size: 0.9rem; /* Adjust paragraph text size for mobile */
-  }
-
-  header {
-    position: relative;
-    top: auto;
-    z-index: auto;
-  }
-
-  footer {
-    position: relative;
-    bottom: auto;
-    width: 100%;
-  }
-
-  footer, header {
-    text-align: center;
-    padding: 1rem;
-  }
-}
-
-/* Laptop */
-@media (max-width: 900px) {
-  body {
-    font-family: 'Verdana', sans-serif; /* Change font for tablets/small laptops */
-    font-size: 1rem; /* Set default font size for medium screens */
-  }
-
-  h1 {
-    font-size: 1.75rem; /* Adjust heading size for medium screens */
-  }
-
-  h2 {
-    font-size: 1.5rem; /* Adjust heading size for medium screens */
-  }
-
-  p {
-    font-size: 1rem; /* Adjust paragraph text size for medium screens */
   }
 
   header {
