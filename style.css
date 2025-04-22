@@ -227,59 +227,49 @@ button:active {
 }
 
 /*responsiveness*/
-
-/* default */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman'; /* Default font for large screens */
+  font-size: 1rem; /* Default font size */
   margin: 0 auto;
   max-width: 1000px;
-  padding: 1rem;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* for phones */
-@media screen and (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr;
+/* 📱 Mobile styles — for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto for mobile */
+    font-size: 0.875rem; /* Smaller font size for mobile screens */
   }
 
-  header, footer {
-    text-align: center;
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
   }
 
-  .flex-attendance {
-    flex-direction: column;
-    align-items: center;
+  h2 {
+    font-size: 1.25rem; /* Adjust heading size for mobile */
   }
 
-  form textarea {
-    width: 100%;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
+  p {
+    font-size: 0.9rem; /* Adjust paragraph text size for mobile */
   }
 }
 
-/* tablets/laptops */
+/* 💻 Medium screens — tablets/small laptops (600px to 900px) */
 @media (max-width: 900px) {
-  main {
-    grid-template-columns: 1fr;
+  body {
+    font-family: 'Verdana', sans-serif; /* Change font for tablets/small laptops */
+    font-size: 1rem; /* Set default font size for medium screens */
   }
 
-  .flex-attendance {
-    justify-content: center;
-    gap: 0.5rem;
+  h1 {
+    font-size: 1.75rem; /* Adjust heading size for medium screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size for medium screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph text size for medium screens */
   }
 }
