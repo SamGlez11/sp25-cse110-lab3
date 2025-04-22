@@ -109,6 +109,60 @@ header {
 
 /* Shorthand */
 section {
-  border: 2px dashed #0104a3; /* shorthand for width, style, and color */
+  border: 2px dashed #0104a3;
   border-radius: 8px;
+}
+
+/*Text*/
+
+h1 {
+  color: darkred;
+  text-decoration: underline;
+  text-align: center;
+}
+
+p {
+  color: #333333;
+  text-align: justify;
+  text-decoration: none;
+}
+
+/*Display*/
+
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+span {
+  display: inline;
+}
+
+/* Sizing */
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+video {
+  min-width: 300px;
+  height: 200px;
+}
+
+/* Positioning */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
 }
